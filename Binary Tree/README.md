@@ -18,5 +18,4 @@ public class TreeNode {
     this.data = data;
   }
 }
-
 ```
