@@ -19,3 +19,22 @@ public class TreeNode {
   }
 }
 ```
+
+# Recursive PreOrder Traversal of a Binary Tree
+
+* Visit the root node.
+* Traverse the left subtree in Pre order fashion.
+* Traverse the right subtree in Pre order fashion.
+
+Basic code structure:
+```
+public void preOrder(TreeNode root) {
+  if(root == null)
+  {
+    return;
+   }
+   System.out.print(root.data + "")
+   preOrder(root.left);
+   preOrder(root.right);
+}
+```
