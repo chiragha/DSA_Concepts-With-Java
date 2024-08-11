@@ -60,3 +60,21 @@ Basic code structure:
   }
 ```
 
+# Recursive Inorder Traversal of a Binary Tree
+
+* Traverse the left subtree in In order fashion.
+* Visit the root node
+* Traverse the right subtree in In order fashion.
+
+Basic code structure:
+```
+public void inOrder(TreeNode root){
+  if(root == null)
+  {
+  return;
+   }
+  inOrder(root.left);
+  System.out.print(root.data+"");
+  inOrder(root.right);
+  }
+```
