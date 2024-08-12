@@ -88,7 +88,7 @@ Basic code structure:
   {
   return;
    }
-  Stack<TreeNode> stack = Stack<>();
+  Stack<TreeNode> stack =new Stack<>();
   TreeNode temp = root;
   while(!stack.isEmpty() || temp != null){
   if(temp != null){
