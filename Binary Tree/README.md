@@ -104,3 +104,24 @@ Basic code structure:
 ```
 
 
+# Recursive PostOrder traversal of a Binary Tree
+
+* Traverse the left subtree in Postorder fashion.
+* Traverse the right subtree in Postorder fashion.
+* Visit the root node
+
+
+Basic code structure:
+```
+public void postOrder(TreeNode root){
+  if(root == null)
+  {
+  return;
+   }
+   postOrder(root.left);
+   postOrder(root.right);
+   System.out.print(root.data+"");
+ }
+  
+```
+  
